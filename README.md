@@ -110,9 +110,38 @@ Answer the following questions:
 - (Optional) What would you do to improve the PID controller?
 
 
-### Tips:
 
-- When you wil be testing your c++ code, restart the Carla simulator to remove the former car from the simulation.
-- If the simulation freezes on the desktop mode but is still running on the terminal, close the desktop and restart it.
-- When you will be tuning the PID parameters, try between those values:
+// Add the plots to your report and explain them (describe what you see)
+
+<img width="643" alt="Figure1" src="https://user-images.githubusercontent.com/27455919/161430956-4ae3af0d-ce5a-447f-a366-479963fefff3.png">
+
+<img width="641" alt="Figure2" src="https://user-images.githubusercontent.com/27455919/161430964-baf0ddc9-183f-40c9-b13d-fa8a5ba1912b.png">
+
+
+// What is the effect of the PID according to the plots, how each part of the PID affects the control command?
+
+
+
+PID using proportional value navigate toward goal
+
+P(proportional) values is calculated from current error only. 
+Produce constant steady-state error
+
+
+I(Integral) values is calculated from cumulative error.
+Reduce or eliminate steady-state error
+
+D(Derivative) values is calculated from difference between current and past error.
+Reduce rate of change error
+
+// How would you design a way to automatically tune the PID parameters?
+
+Using twiddle algorithm, search around one parameter than another
+
+// PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+
+Pros: Simple logic, easy to train
+Cons: Tuning complicate, hard to expand to complex tunning
+
+// (Optional) What would you do to improve the PID controller?
 
