@@ -115,7 +115,12 @@ Answer the following questions:
 
 <img width="643" alt="Figure1" src="https://user-images.githubusercontent.com/27455919/161430956-4ae3af0d-ce5a-447f-a366-479963fefff3.png">
 
+Errors are constantly oscilating in Figure 1, while steer output remained relatively smooth
+
+
 <img width="641" alt="Figure2" src="https://user-images.githubusercontent.com/27455919/161430964-baf0ddc9-183f-40c9-b13d-fa8a5ba1912b.png">
+
+Error in Throttle reached peak while passing the second car and driving towards wall, it seems that the vehicle tried to evade from the solid line while omitting the wall barrier.
 
 
 // What is the effect of the PID according to the plots, how each part of the PID affects the control command?
